@@ -166,7 +166,7 @@
 body {
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #3c3c3c;
 }
 
@@ -334,7 +334,7 @@ i {
   background-size: cover;
   /*background-image: url('../img/hero-bg.png?1378700994');*/
   background-image: url('../img/backg.jpg');
-  background-image: url('../img/animatedbackground.gif?12314212');
+  /*background-image: url('../img/animatedbackground.gif?12314212');*/
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 7em;
@@ -361,7 +361,7 @@ i {
 }
 @media screen and (min-width: 768px) {
   .header .heading {
-    font-size: 5em;
+    font-size: 3.5em;
   }
 }
 .header p {

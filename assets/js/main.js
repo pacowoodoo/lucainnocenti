@@ -46,7 +46,7 @@
 					var latitude = results[0].geometry.location.lat();
 					var longitude = results[0].geometry.location.lng();
 
-					jQuery('.map-canvas').gmap().bind('init', function(ev, map) {
+					jQuery('.map-canvas').gmap({'scrollwheel':false}).bind('init', function(ev, map) {
 						jQuery('.map-canvas').gmap('addMarker', {'position': latitude+','+longitude, 'bounds': true}).click(function() {
 							jQuery('.map-canvas').gmap('openInfoWindow', {'content': contentString}, this);
 						});
