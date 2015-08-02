@@ -21,8 +21,8 @@
 		if($('.pie-chart').length > 0) {
 			chart.easyPieChart({
 				size: 180,
-				barColor: '#cf5037',
-				trackColor: '#545454',
+				barColor: '#bc341b',
+				trackColor: '#ffe9c8',
 				scaleColor: false,
 				lineWidth: 3,
 				lineCap: "square",
@@ -38,8 +38,8 @@
 		if( $('.map-canvas').length > 0) {
 			
 			var geocoder = new google.maps.Geocoder();
-			var address = 'Google New York, 76 Ninth Ave, New York, NY, USA';
-			var contentString = '<div class="map-detail"><strong>Our Office:</strong><p>' + address + '</p></div>';
+			var address = 'Arezzo, 52100, Italia';
+			var contentString = '<div class="map-detail"><strong></strong></p></div>';
 			
 			geocoder.geocode({'address': address }, function(results, status) {
 				if(status == google.maps.GeocoderStatus.OK) { 

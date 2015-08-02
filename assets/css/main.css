@@ -332,7 +332,9 @@ i {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  background-image: url('../img/hero-bg.png?1378700994');
+  /*background-image: url('../img/hero-bg.png?1378700994');*/
+  background-image: url('../img/backg.jpg');
+  background-image: url('../img/animatedbackground.gif?12314212');
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 7em;
