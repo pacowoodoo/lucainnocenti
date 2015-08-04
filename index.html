@@ -1,607 +1,323 @@
+
 <!DOCTYPE html>
-<html class=" js no-touch details texttrackapi track formvalidation fieldsetelements fieldsetdisabled" itemscope="" itemtype="http://schema.org/Person">
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Luca Innocenti - Resume - Ecommerce &amp; Project Manager  at Sintra Consulting</title>
-        <meta name="description" content="Luca Innocenti resume" />
-        <meta name="viewport" content="width=device-width" />            
-        <meta name="HandheldFriendly" content="true">
-        <link rel="stylesheet" href="/css/shim.css">
-        <link rel="shortcut icon" href="">
-        <link rel="shortcut icon" href="">
-
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="http://www.lucainnocenti.com/css/avatar_cp_big.jpg" />
-        <meta name="msapplication-TileColor" content="#222222" />
-
-
-        <meta name="robots" content="index,follow">
-        <meta property="og:type" content="profile">
-        <meta property="og:title" content="Luca Innocenti - Ecommerce &amp; Project Manager  at Sintra Consulting">
-        <meta property="og:url" content="http://www.lucainnocenti.com" />            
-        <meta property="og:image" content="http://www.lucainnocenti.com/css/avatar_cp_big.jpg" />
-        <meta property="og:description" content="">
-        <meta property="og:site_name" content="Ecommerce &amp; Project Manager  at Sintra Consulting">
-        <meta property="og:profile:first_name" content="Luca" itemprop="givenName">
-        <meta property="og:profile:last_name" content="Innocenti" itemprop="familyName">
-        <meta property="og:profile:gender" content="male" itemprop="gender">
-        <meta property="og:locale" content="en_US">
-        <meta property="fb:page_id" content="6239267965">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@pacowoodoo">
-        <meta name="twitter:title" content="Ecommerce &amp; Project Manager  at Sintra Consulting">
-        <meta name="twitter:description" content="Luca Innocenti&#39;s resume" itemprop="description">
-        <meta name="twitter:image" content="http://www.lucainnocenti.com/css/avatar_cp_big.jpg">
-
-        <link href="/css/bootstrap-minimal.min.css" type="text/css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-        <link href="/css/cv.css" type="text/css" rel="stylesheet">
-        <script src="/css/jquery.min.js" data-module="jquery" data-shim="jQuery"></script>
-        <script src="/css/modernizr.custom.min.js"></script>
-        <script src="/css/polyfiller.js"></script>
-        <script src="/css/cv.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var colors = new Array(
-                        [62, 73, 129],
-                        [62, 73, 129],
-                        [62, 73, 129],
-                        [61, 117, 142],
-                        [63, 160, 165],
-                        [31, 36, 64]);
-
-                var step = 0;
-                //color table indices for: 
-                // current color left
-                // next color left
-                // current color right
-                // next color right
-                var colorIndices = [0, 1, 2, 3];
-
-                //transition speed
-                var gradientSpeed = 0.003;
-
-                function updateGradient()
-                {
-                    var c0_0 = colors[colorIndices[0]];
-                    var c0_1 = colors[colorIndices[1]];
-                    var c1_0 = colors[colorIndices[2]];
-                    var c1_1 = colors[colorIndices[3]];
-
-                    var istep = 1 - step;
-                    var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-                    var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-                    var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-                    var color1 = "#" + ((r1 << 16) | (g1 << 8) | b1).toString(16);
-
-                    var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-                    var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-                    var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-                    var color2 = "#" + ((r2 << 16) | (g2 << 8) | b2).toString(16);
-
-
-                    $('#header').css({background: "-webkit-gradient(linear, left top, right top, from(" + color1 + "), to(" + color2 + "))"});
-                    step += gradientSpeed;
-                    if (step >= 1)
-                    {
-                        step %= 1;
-                        colorIndices[0] = colorIndices[1];
-                        colorIndices[2] = colorIndices[3];
-
-                        //pick two new target color indices
-                        //do not pick the same as the current one
-                        colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-                        colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-
-                    }
-                }
-
-                setInterval(updateGradient, 10);
-            });
-        </script>
-    <body>
-
-        <div role="main" class="main">
-
-
-            <div id="cv-container" data-dyb-calc="{ &quot;height&quot;: &quot;window - (#navbar) - (#incentivebar) - (#ownerbar)&quot; }" style="height: 736px;">
-                <div id="cv" data-the-great-closer="">
-                    <div id="header">
-                        <h1 id="user-name">
-                            <a href="http://lucainnocenti.com" itemprop="name">Luca Innocenti</a>
-                        </h1>
-                        <div class="widget title dyb-anim-fade" data-widget-portlet="title">
-                            <h2 id="cv-title">
-                                <a href="http://lucainnocenti.com" itemprop="jobTitle">Ecommerce &amp; Project Manager  at Sintra Consulting</a>
-                            </h2>
-                        </div>
-
-                    </div>
-                    <section id="cv-menu-wrapper">
-                        <nav id="cv-menu" class="clearfix">
-                            <div id="download-cv">
-                                <!-- directive: edit-button #configbar/design/print-->
-                                <a id="download-cv-button" href="/luca_innocenti_resume.pdf" target="_blank" data-dyb-track-click="{ &quot;action&quot;: &quot;download&quot;, &quot;label&quot;: &quot;&quot; }">Download</a>
-                            </div>
-                        </nav>
-                    </section>
-                    <section id="content-wrapper" class="clearfix">
-                        <div id="fixed-col-1">
-                            <div class="widget userInformation dyb-anim-fade" data-widget-portlet="userInformation">
-
-
-                                <div class="widget-element">
-                                    <div class="widget-content">
-                                        <img class="avatar" alt="Luca Innocenti" src="/css/avatar_cp_big.jpg" itemprop="image">
-                                        <ul class="userinfo-list">
-                                            <li class="userinfo-item" id="userinfo-age">
-                                                31 years old 
-                                            </li>
-                                            <li class="userinfo-item" id="userinfo-city">
-                                                <a itemprop="homeLocation" data-placement="bottom" data-html="true" data-dyb-tooltip="" data-dyb-tooltip-content="#user-info-tooltip" data-original-title="" title="">Arezzo Area                        <span id="user-info-tooltip" class="hidden">
-                                                        Arezzo Area                                                                                         <br>
-                                                        Italy                                                     </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>            </div>
-
-
-                            <div class="widget contacts dyb-anim-fade" data-widget-portlet="contacts">
-
-                                <h3 class="widget-title">
-                                    <span>Contact</span>
-                                </h3>
-
-                                <div class="widget-element">
-                                    <div class="widget-content">
-
-
-                                        <div id="contacts-list" class="lenght1">
-                                            <div id="email" class="contact-item" data-dyb-popover="
-                                                 " data-placement="bottom" data-container="#email" data-original-title="" title="">
-                                                <i class="dybicon-contacts"></i> E-mail                </div>
-                                        </div>
-                                    </div>
-                                </div>                </div>
-
-                            <div class="widget professionalPosition dyb-anim-fade" data-widget-portlet="professionalPosition">
-
-                                <h3 class="widget-title">
-                                    <span>Professional Status</span>
-                                </h3>
-
-                                <div class="widget-element">
-                                    <div class="widget-content">
-                                        <div id="status">
-                                            <span id="status-title" class="POSTE">Employed</span>	
-                                        </div>
-                                        <div id="availability">
-                                            <span id="availability-title" class="JOB_S">Available</span>	
-                                        </div>
-                                    </div>
-                                </div>            </div>
-
-                            <div class="widget presentation dyb-anim-fade" data-widget-portlet="presentation">
-
-                                <h3 class="widget-title">About Me </h3>
-
-                                <div class="widget-element">
-                                    <div class="widget-content">
-                                        <p id="presentation-text">Now I'm leading a team of Magento developer to create wonderfull eCommerce, <br>
-                                            helping our customer to let shine their products.<br>
-                                            <br>
-                                            -- Your eCommerce doen't convert enough visitor?<br>
-                                            --  Your funnel don't directs enough customer to buy?<br>
-                                            In this 4 years of eCommerce I had a lot of situations like that, <br>
-                                            but enhancing:<br>
-                                            - categorization<br>
-                                            - usability <br>
-                                            - customer awareness<br>
-                                            is possibile to improve convertions.<br>
-                                            <br>
-                                            I believe in continuous projects improvement and that every goal is reachable with focused work and details attention.<br>
-                                            <br>
-                                            The thing that i love the most is analize problem and find innovating and fitting solutions.<br>
-                                            <br>
-                                            Do you want to talk with me about your  projects? Contact me, will be a pleasure.</p>
-                                    </div>
-                                </div>            </div>
-
-                            <div class="widget links dyb-anim-fade" data-widget-portlet="links">
-
-                                <h3 class="widget-title">
-                                    <span>My Links</span>
-                                </h3>
-
-                                <div class="widget-element">
-                                    <div class="widget-content">
-                                        <ul class="links-list lenght1">
-                                            <li class="link-item-container">
-                                                <a href="https://www.linkedin.com/in/lucainnocenti" target="_blank" class="link-item LinkedIn" data-type="link" data-id="372346" data-container="body">LinkedIn</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>            </div>
-
-
-
-
-                        </div>
-                        <div id="col-1" class="column">
-                            <div class="widget experiences dyb-anim-fade" data-widget-portlet="experiences">
-
-                                <h3 class="widget-title">
-                                    <i class="dybicon-experiences"></i> Experience
-                                </h3>
-
-                                <div class="widget-element" itemscope="" itemtype="http://www.schema.org/Event">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="name" content="Sintra Consulting">
-                                    </span>
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="url" content="">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">
-                                            Frontend Developer &amp; Ecommerce Magento chief developer</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="company-name">Sintra Consulting</span>
-                                            <div class="date-range">
-                                                Since            <span class="started-at">
-                                                    September 2011</span>
-
-                                                <meta itemprop="startDate" content="September 1, 2011 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="missions">
-                                            <li class="mission">I'm managing project on Magento platform and other kind of web project.</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget-element-footer">
-                                    </div></div>            <div class="widget-element" itemscope="" itemtype="http://www.schema.org/Event">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="name" content="CDC Point spa">
-                                    </span>
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="url" content="">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Consultant for CDC spa</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="company-name">CDC Point spa</span>
-                                            <div class="date-range">
-                                                Since            <span class="started-at">
-                                                    July 2010</span>
-
-                                                <meta itemprop="startDate" content="July 1, 2010 12:48">
-                                            </div>
-                                        </h5>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="missions">
-                                            <li class="mission">Integration of interhosting with Microsoft CRM and develope of connection between CRM and NIC/Domain provider API.</li>
-                                            <li class="mission">Optimization of customer experience on e-commerce.</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget-element-footer">
-                                    </div></div>            <div class="widget-element" itemscope="" itemtype="http://www.schema.org/Event">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="name" content="Sintra Consulting">
-                                    </span>
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="url" content="">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Web developer Java and Php</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="company-name">Sintra Consulting</span>
-                                            <div class="date-range">
-                                                <span class="started-at">
-                                                    May 2007</span>
-                                                - <span class="ended-at">
-                                                    September 2011</span>
-
-
-                                                <meta itemprop="startDate" content="May 1, 2007 00:00">
-                                                <meta itemprop="endDate" content="September 29, 2011 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="missions">
-                                            <li class="mission">Web advanced solutions!!</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget-element-footer">
-                                    </div></div>            <div class="widget-element" itemscope="" itemtype="http://www.schema.org/Event">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="name" content="Interfree">
-                                    </span>
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="url" content="">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Developer for www.interhosting.it</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="company-name">Interfree</span>
-                                            <div class="date-range">
-                                                <span class="started-at">
-                                                    March 2009</span>
-                                                - <span class="ended-at">
-                                                    December 2010</span>
-
-
-                                                <meta itemprop="startDate" content="March 1, 2009 00:00">
-                                                <meta itemprop="endDate" content="December 29, 2010 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="missions">
-                                            <li class="mission">Develop of the interhosting platform in PHP + WebService + Perl</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget-element-footer">
-                                    </div></div>            <div class="widget-element" itemscope="" itemtype="http://www.schema.org/Event">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="name" content="Unicredit Global Information Services">
-                                    </span>
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="url" content="">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Java developer</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="company-name">Unicredit Global Information Services</span>
-                                            <div class="date-range">
-                                                <span class="started-at">
-                                                    October 2008</span>
-                                                - <span class="ended-at">
-                                                    December 2008</span>
-
-
-                                                <meta itemprop="startDate" content="October 1, 2008 00:00">
-                                                <meta itemprop="endDate" content="December 29, 2008 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="missions">
-                                            <li class="mission">I worked in the project ARENA</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget-element-footer">
-                                    </div></div>            <div class="widget-element" itemscope="" itemtype="http://www.schema.org/Event">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="name" content="SAGO">
-                                    </span>
-                                    <span itemscope="" itemtype="http://www.schema.org/Organization">
-                                        <meta itemprop="url" content="">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Stageur</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="company-name">SAGO</span>
-                                            <div class="date-range">
-                                                <span class="started-at">
-                                                    January 2004</span>
-                                                - <span class="ended-at">
-                                                    April 2004</span>
-
-
-                                                <meta itemprop="startDate" content="January 1, 2004 00:00">
-                                                <meta itemprop="endDate" content="April 29, 2004 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="missions">
-                                            <li class="mission">200 hours of stage in SAGO</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="widget-element-footer">
-                                    </div></div>                </div>
-                            <div class="widget educations dyb-anim-fade" data-widget-portlet="educations">
-
-                                <h3 class="widget-title">
-                                    <i class="dybicon-educations"></i> Education
-                                </h3>
-
-                                <div class="widget-element" itemscope="" itemtype="http://schema.org/EducationEvent">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/EducationalOrganization">
-                                        <meta itemprop="name" content="Università degli Studi di Firenze">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">105</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="school-name">Università degli Studi di Firenze</span>
-                                            <div class="date-range">
-                                                <span class="started-at">
-                                                    September 2002</span>
-                                                - <span class="ended-at">
-                                                    June 2007</span>
-
-
-                                                <meta itemprop="startDate" content="September 1, 2002 00:00">
-                                                <meta itemprop="endDate" content="June 30, 2007 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>
-                                    <div class="widget-element-content">
-
-                                        <p class="description" itemprop="description">Computer Science</p>
-                                    </div>
-
-                                </div>            <div class="widget-element" itemscope="" itemtype="http://schema.org/EducationEvent">
-
-                                    <span itemscope="" itemtype="http://www.schema.org/EducationalOrganization">
-                                        <meta itemprop="name" content="Liceo Scientifico">
-                                    </span>
-
-
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">86/100</h4>
-                                        <h5 class="widget-element-subtitle">
-                                            <span class="school-name">Liceo Scientifico</span>
-                                            <div class="date-range">
-                                                <span class="started-at">
-                                                    September 1997</span>
-                                                - <span class="ended-at">
-                                                    June 2002</span>
-
-
-                                                <meta itemprop="startDate" content="September 1, 1997 00:00">
-                                                <meta itemprop="endDate" content="June 30, 2002 00:00">
-                                            </div>
-                                        </h5>
-                                    </div>
-                                    <div class="widget-element-content">
-
-                                        <p class="description" itemprop="description">English, Philosophy</p>
-                                    </div>
-
-                                </div>      
-                            </div>
-                            <div class="widget interests dyb-anim-fade" data-widget-portlet="interests">
-
-                                <h3 class="widget-title">
-                                    <i class="dybicon-interests"></i> Interests
-                                </h3>
-
-                                <div class="widget-element">
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Others</h4>
-                                    </div>    <div class="widget-element-content">
-                                        <ul class="interests-list">
-                                            <li class="interest-item">music</li>
-                                            <li class="interest-item">scouting</li>
-                                            <li class="interest-item">swimming</li>
-                                            <li class="interest-item">programming</li>
-                                            <li class="interest-item">SEO</li>
-                                            <li class="interest-item">project management</li>
-                                            <li class="interest-item">cooking</li>
-                                            <li class="interest-item">playing bass</li>
-                                            <li class="interest-item">playing guitar</li>
-                                        </ul>
-                                    </div>    
-                                </div>                
-                            </div>
-                        </div>
-                        <div id="col-2" class="column">
-                            <div class="widget skills dyb-anim-fade" data-widget-portlet="skills">
-
-                                <h3 class="widget-title">
-                                    <i class="dybicon-skills"></i> Skills
-                                </h3>
-
-                                <div class="widget-element">
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">Others</h4>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="skills-list">
-                                            <li class="skill-item">Usabilty</li>
-                                            <li class="skill-item">Seo basics</li>
-                                            <li class="skill-item">Web 2.0</li>
-                                            <li class="skill-item">PHP</li>
-                                            <li class="skill-item">Java</li>
-                                            <li class="skill-item">HTML</li>
-                                            <li class="skill-item">Advanced CSS</li>
-                                            <li class="skill-item">jQuery</li>
-                                            <li class="skill-item">MySQL</li>
-                                            <li class="skill-item">PostgreSQL</li>
-                                            <li class="skill-item">Stored Procedures</li>
-                                            <li class="skill-item">SOA</li>
-                                            <li class="skill-item">Complex Systems</li>
-                                            <li class="skill-item">Web Services</li>
-                                            <li class="skill-item">Creative Ideas</li>
-                                            <li class="skill-item">Creative Marketing Solutions</li>
-                                            <li class="skill-item">DWR</li>
-                                            <li class="skill-item">Magento</li>
-                                            <li class="skill-item">Wordpress</li>
-                                            <li class="skill-item">Basic Photoshop</li>
-                                            <li class="skill-item">Care</li>
-                                            <li class="skill-item">Enthusiasm</li>
-                                            <li class="skill-item">SEO</li>
-                                            <li class="skill-item">CMS</li>
-                                            <li class="skill-item">E-commerce</li>
-                                            <li class="skill-item">Integration</li>
-                                            <li class="skill-item">CSS</li>
-                                            <li class="skill-item">Web Development</li>
-                                            <li class="skill-item">JavaScript</li>
-                                            <li class="skill-item">JSON</li>
-                                            <li class="skill-item">HTML + CSS</li>
-                                            <li class="skill-item">Optimization</li>
-                                            <li class="skill-item">User Experience</li>
-                                            <li class="skill-item">Struts</li>
-                                            <li class="skill-item">SQL</li>
-                                            <li class="skill-item">Zend Framework</li>
-                                            <li class="skill-item">AJAX</li>
-                                            <li class="skill-item">Apache</li>
-                                            <li class="skill-item">Subversion</li>
-                                            <li class="skill-item">Web Applications</li>
-                                            <li class="skill-item">Programming</li>
-                                            <li class="skill-item">Front-end Development</li>
-                                            <li class="skill-item">Database Design</li>
-                                            <li class="skill-item">Online Marketing</li>
-                                            <li class="skill-item">CVS</li>
-                                            <li class="skill-item">JSP</li>
-                                            <li class="skill-item">UML</li>
-                                            <li class="skill-item">Online Advertising</li>
-                                            <li class="skill-item">MVC</li>
-                                            <li class="skill-item">SOAP</li>
-                                        </ul>
-                                    </div>
-
-                                </div>            <div class="widget-element">
-                                    <div class="widget-element-header">
-                                        <h4 class="widget-element-title">
-                                            Languages</h4>
-                                    </div>    	<div class="widget-element-content">
-                                        <ul class="skills-list">
-                                            <li class="skill-item">Italian</li>
-                                            <li class="skill-item">English</li>
-                                            <li class="skill-item">French</li>
-                                            <li class="skill-item">Spanish</li>
-                                        </ul>
-                                    </div>
-
-                                </div>                </div>
-
-
-                        </div>
-                    </section>
-                    <section id="cv-footer">
-
-                    </section>
+<head>
+    <title>Luca Innocenti, esperto eCommerce Magento, appassionato di usabilità</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luca Innocenti, eCommerce Magento, Sviluppatore Frontend, Appassionato di User Experience">
+    <meta name="author" content="Luca Innocenti">
+
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+</head>
+<body id="top" data-spy="scroll" data-target="#main-nav">
+    <!-- WRAPPER -->
+    <div class="wrapper">
+
+        <!-- MAIN NAVIGATION -->
+        <nav class="navbar navbar-default" id="main-nav" role="navigation">
+            <div class="container">
+                <!-- brand and toggle -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- navigation links -->
+                <div class="collapse navbar-collapse main-nav-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">HOME</a></li>
+                        <li><a href="#about-me">CHI SONO</a></li>
+                        <li><a href="#resume">ESPERIENZE</a></li>
+                        <li><a href="#projects">PROGETTI</a></li>
+                        <li><a href="#contacts">CONTATTAMI</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <!-- END MAIN NAVIGATION -->
 
-        </div>
+        <!-- HEADER -->
+        <header class="hero-unit header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 left">
+                        <div class="avatar">
+                            <img src="assets/img/profile-picture.png" class="img-responsive" alt="Profile Picture" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 right">
+                        <h1 class="hide">LUCA INNOCENTI Esperto eCommerce Magento</h1>
+                        <h2 class="heading">CIAO, SONO LUCA</h2>
+                        <p>Creo eCommerce Magento rapidi ed usabili, vuoi saperne di più?</p>
+                        <a href="#about-me" class="btn btn-default btn-lg">CONTINUA A LEGGERE</a><!--a href="#" class="btn btn-primary btn-lg">DOWNLOAD vCARD</a-->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
 
-    </body></html>
+        <!-- ABOUT ME -->
+        <section class="section about-me" id="about-me">
+            <div class="container">
+                <h2 class="heading">Chi sono</h2>
+                <p>Sono sempre rimasto <strong>affascinato dalla bellezza e dall'armonia</strong>, 
+                    la mia più importante caratteristica è quella di perfezionare, 
+                    di spendermi per trovare il bello e il funzionale.
+                </p>
+                <p>La mia passione si è quindi intrecciata con il mio lavoro portandomi a creare eCommerce Magento funzionali, 
+                    semplici e belli, sviluppati con la mentalità agile del perfezionamento continuo. 
+                    <strong>Il Kaizen come filosofia di vita e di crescita.</strong>
+                </p>
+                <p>Sono <strong>5 anni che lavoro con entusiamo nel mondo eCommerce su Magento</strong> e voglio utilizzare 
+                    la mia esperienza per </p>
+                <p>Mi piace riflettere, analizzare, cercare le vie di miglioramento e percorrerle, 
+                    seguendo le scelte più remunerative. Per creare <strong>eCommerce che vendono</strong>.</p>
+                <div class="row interest">
+                    <div class="col-md-3">
+                        <h3 class="sub-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Botanica</h3>
+                        <p><strong>Ammirare la natura e la crescita della vita</strong> è una caratteristica che mi porto dietro da sempre, ho al momento una terrazza piena di vita, sperando presto di potermi permettere un giardino.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="sub-heading"><span class="glyphicon glyphicon-picture"></span> Arte</h3>
+                        <p>L'arte è l'<strong>espressione più intima e pura dell'animo umano</strong>. La comunicazione più semplice e più potente. L'istinto realizzato. Il sogno reso vivido. Per questo non potrei vivere senza.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="sub-heading"><span class="glyphicon glyphicon-globe"></span> Viaggi</h3>
+                        <p>Il viaggio visto in sé come <strong>scambio di pensieri ed esperienze</strong>; nel viaggio cerco di capire la società, l'animo del luogo espresso nella vita delle persone e nella loro arte e naturalmente nel loro modo di fare festa.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="sub-heading"><span class="glyphicon glyphicon-eye-open"></span> Filosofia</h3>
+                        <p>La disciplina volta a ricercare il <strong>perchè delle cose e dell'animo umano</strong>. L'essenza della speculazione volta all'intima conoscenza. Adoro l'etica e sono affascinato dalla metafisica.</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <h3 class="sub-heading">Seguimi su:</h3>
+                    <ul class="social-icons">
+                        <!--li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                        <li><a href="https://plus.google.com/u/0/113412762172857898460"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://it.linkedin.com/in/lucainnocenti"><i class="fa fa-linkedin"></i></a></li>
+                        <!--li><a href="#"><i class="fa fa-dribbble"></i></a></li-->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT ME -->
+
+        <!-- SKILLS -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <h2 class="heading sr-only">COMPETENZE TECNICHE</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="skill-chart">
+                            <div class="pie-chart" id="chart1" data-percent="92">
+                                <span class="percent">92%</span>
+                            </div>
+                            <span class="chart-title">Magento</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-chart">
+                            <div class="pie-chart" id="chart2" data-percent="85">
+                                <span class="percent">68%</span>
+                            </div>
+                            <span class="chart-title">SEO <br/><span style='font-size: 12px'>(search engine optimization)</span></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-chart">
+                            <div class="pie-chart" id="chart3" data-percent="78">
+                                <span class="percent">87%</span>
+                            </div>
+                            <span class="chart-title">Sviluppo frontend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SKILLS -->
+
+        <!-- RESUME -->
+        <section class="section resume" id="resume">
+            <div class="container">
+                <h2 class="heading">ESPERIENZE</h2>
+                <ul class="timeline">
+                    <li class="year">2011</li>
+                    <!--li class="event ecommerce">
+                        <h3 class="heading">eCommerce: Beads&Co.it </h3>
+                        <span class="month"><i class="fa fa-calendar"></i>Aprile 2011 - present</span>
+                        <p>In 5 anni di lavoro ho appreso tutto quello che c'è da sapere sulla realizzazione di un eCommerce di successo, la tecnologia Magento ha fatto da padrone in questi anni, nonostante alcuni progetti fossero gestiti in altre tecnologie come Zencart o Wordpress.
+                            Ho fatto mia qualsiasi della creazione di un eCommerce, dall'ottimizzazione delle performance, alla strutturazione di navigazione e presentazione. Creando <strong>eCommerce che funzionano e producono profitto</strong>.</p>
+                        <h3 class="heading">Responsabile area eCommerce Magento presso Sintraconsulting</h3>
+                    </li-->
+                    <!--li class="event ecommerce">
+                        <span class="month"><i class="fa fa-calendar"></i>Aprile 2011 - present</span>
+                        <p>In 5 anni di lavoro ho appreso tutto quello che c'è da sapere sulla realizzazione di un eCommerce di successo, la tecnologia Magento ha fatto da padrone in questi anni, nonostante alcuni progetti fossero gestiti in altre tecnologie come Zencart o Wordpress.
+                            Ho perfezionato ogni aspetto della creazione di un eCommerce, dall'ottimizzazione delle performance, alla strutturazione di navigazione e presentazione. Creando <strong>eCommerce che funzionano e producono profitto</strong>.</p>
+                    </li-->
+                    <li class="event">
+                        <h3 class="heading">Responsabile area eCommerce Magento presso Sintraconsulting</h3>
+                        <span class="month"><i class="fa fa-calendar"></i>Aprile 2011 - present</span>
+                        <p>In 5 anni di lavoro ho appreso tutto quello che c'è da sapere sulla realizzazione di un eCommerce di successo, la tecnologia Magento ha fatto da padrone in questi anni, nonostante alcuni progetti fossero gestiti in altre tecnologie come Zencart o Wordpress.
+                            Ho perfezionato ogni aspetto della creazione di un eCommerce, dall'ottimizzazione delle performance, alla strutturazione di navigazione e presentazione. Creando <strong>eCommerce che funzionano e producono profitto</strong>.</p>
+                    </li>
+                    <li class="year">2007</li>
+                    <li class="event">
+                        <h3 class="heading">Sviluppatore Java e Php presso Sintraconsulting</h3>
+                        <span class="month"><i class="fa fa-calendar"></i>Maggio 2007 - Aprile 2011</span>
+                        <p>Sviluppo di prodotti come OneMinuteSite e In-Farmacia in Java e di siti web, prevalentemente Wordpress, in Php. In questi anni ho appreso il senso dell'armonia e della bellezza nella creazione dei siti. Ispirato molto dal lavoro di Riccardo Ghignoni.</p>
+                    </li>
+                    <li class="event">
+                        <h3 class="heading">Laurea 105/110 in Informatica</h3>
+                        <span class="month"><i class="fa fa-calendar"></i>Settembre 2002 - Aprile 2007</span>
+                        <p> Laurea in Informatica presso l'Universito di Sciente Fisiche, Naturali e Matematiche corso di Informatica con specializzazione nelle Reti di Calcolatori.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- END RESUME -->
+
+        <!-- PROJECTS -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="heading">PROGETTI</h2>
+                <p class="copy-text">Di seguito alcuni eCommerce Magento di successo completati durante la mia carriera, per il momento metterò i più importanti </p>
+                <div class="row project-list">
+                    <ul class="project-grid project-effect-shrink">
+                        <li class="col-md-6">
+                            <figure>
+                                <img src="assets/img/projects/monnalisa.jpg" alt="Monnalisadreams"/>
+                                <figcaption>
+                                    <div class="project-item-info">
+                                        <h3 class="sub-heading">Monnalisa - magazzino distribuito</h3>
+                                        <p>Ecommerce di abbigliamento bambina, tramite una forte personalizzazione il sistema permette di vendere online anche prodotti presenti nei negozi fisici.</p>
+                                        <a href="http://www.monnalisadreams.com" class="btn btn-default">Vai all'ecommerce</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="col-md-6">
+                            <figure>
+                                <img src="assets/img/projects/feeldesign.jpg" alt="Feeldesign"/>
+                                <figcaption>
+                                    <div class="project-item-info">
+                                        <h3 class="sub-heading">Feeldesign - numerosità e differenza di prodotti</h3>
+                                        <p>Feeldesign ha un vasto catalogo prodotti molti differenti tra loro, l'interfaccia è studiata per valorizzare ciascuna tipologia.</p>
+                                        <a href="http://www.feeldesign.com" class="btn btn-default">Vai all'ecommerce</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- END PROJECTS -->
+
+        <!-- CONTACTS -->
+        <section class="section contacts" id="contacts">
+            <div class="container">
+                <h2 class="heading">CONTATTAMI</h2>
+                <p>Sono sempre <strong>felice di incrontrare e conoscere nuove persone e progetti</strong>. Se hai intenzione di coinvolgermi come consulente, 
+                    fare business insieme o semplicemente prendere un caffè ad Arezzo,
+                    non hai che da contattarmi, sarò felice di risponderti.</p>
+                <div class="row google-map">
+                    <div class="map-canvas"></div>
+                </div>
+                <div class="row contact-address">
+                    <!--div class="col-md-6">
+                        <div class="contact-form-wrapper margin-bottom">
+                            <form id="contact-form" class="form-horizontal contact-form" method="post" role="form" novalidate>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="contact-name" class="control-label sr-only">Nome</label>
+                                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Nome*" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="contact-email" class="control-label sr-only">eMail</label>
+                                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email*" data-parsley-trigger="focusin focusout" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-subject" class="control-label sr-only">Titolo</label>
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Titolo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message" class="control-label sr-only">Messaggio</label>
+                                    <div class="col-sm-12">
+                                        <textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Messaggio*" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <button id="submit-button" type="submit" class="btn btn-primary"><i class="fa loading-icon"></i> <span>Invia il Messaggio</span></button>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="msg-submitted" id="msg-submitted" value="true">
+                            </form>
+                        </div>
+                    </div-->
+
+                    <div class="col-md-12">
+                        <p>Contattami <strong>per la prima volta via Email</strong>  
+                            così potrò dedicare alla risposta maggior tempo, cercherò di risponderti entro 48h</p>
+                        <p>Per <strong>urgenze</strong>, invece, puoi chiamarmi direttamente al cellulare:</p>
+                        <div class="address-lines">
+                            <p>Email: <a href="mailto:me@lucainnocenti.com">me@lucainnocenti.com</a></p>
+                            <p>Cellulare: <a href="tel:+393496007853">(+39) 349 600 78 53</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section>
+<div class="typeform-widget" data-url="https://pacowoodoo.typeform.com/to/tNDnlm" data-text="Contact Form" style="width:100%;height:500px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_tNDnlm&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div>
+
+        </section-->
+        <!-- END CONTACTS -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>Copyright 2015 Luca Innocenti. All Rights Reserved.</p>
+        </footer>
+        <!-- END FOOTER -->
+
+    </div>
+    <!-- END WRAPPER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="assets/js/plugins/map/jquery.ui.map.full.min.js?ver=3.0"></script>
+    <script src="assets/js/plugins/scrolling/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="assets/js/plugins/scrolling/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="assets/js/plugins/parsley/parsley.min.js"></script>
+    <script src="assets/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script src="assets/js/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
