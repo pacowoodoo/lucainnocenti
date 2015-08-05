@@ -724,7 +724,7 @@ ul.social-icons i:hover {
 .project-grid figure .project-item-info .sub-heading {
   font-size: 1.1em;
   line-height: 1;
-  color: #fff;
+  color: #888;
 }
 @media screen and (max-width: 992px) {
   .project-grid figure .project-item-info {
@@ -775,7 +775,7 @@ ul.social-icons i:hover {
   }
   .project-effect-shrink figure .project-item-info p {
     font-size: 0.9em;
-    color: #fff;
+    color: #888;
     margin-bottom: 5px;
   }
   .project-effect-shrink figure .project-item-info a {
