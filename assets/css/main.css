@@ -336,11 +336,13 @@ i {
   background-image: url('../img/backg.jpg');
   /*background-image: url('../img/animatedbackground.gif?12314212');*/
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   padding-top: 7em;
   padding-bottom: 7em;
   text-align: center;
 }
+
+.hero-unit p, .hero-unit .heading{text-shadow:1px 1px 3px #000;}
 @media screen and (min-width: 992px) {
   .hero-unit {
     text-align: left;
