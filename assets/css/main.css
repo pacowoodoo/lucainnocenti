@@ -188,7 +188,9 @@ a:hover, a:focus {
   margin: 0 auto;
   box-shadow: 0 0 5px #ccc;
 }
-
+.highlanes{line-height: 1.8;}
+.highlanes h3{margin-top:40px;}
+.highlanes h3.first{margin-top: 0px;}
 .glyphicon,
 i {
   color: #aea08b;
@@ -482,7 +484,7 @@ ul.social-icons i:hover {
 /*------------------------------------------------*/
 /*	Skills
 /*------------------------------------------------*/
-.skills {
+.skills, .gray {
   background-color: #eed9b8;
 }
 
@@ -724,7 +726,7 @@ ul.social-icons i:hover {
 .project-grid figure .project-item-info .sub-heading {
   font-size: 1.1em;
   line-height: 1;
-  color: #888;
+  color: #333;
 }
 @media screen and (max-width: 992px) {
   .project-grid figure .project-item-info {
@@ -775,7 +777,7 @@ ul.social-icons i:hover {
   }
   .project-effect-shrink figure .project-item-info p {
     font-size: 0.9em;
-    color: #888;
+    color: #333;
     margin-bottom: 5px;
   }
   .project-effect-shrink figure .project-item-info a {
