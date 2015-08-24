@@ -97,10 +97,19 @@
                         </form>
 
 
-                        And I ll be pleased <span class="glyphicon glyphicon-heart-empty"></span> to continue working on it.<br/><br/>
+                        And I'll be pleased <span class="glyphicon glyphicon-heart-empty"></span> to continue working on it.<br/><br/>
                         Otherwise... you can download the module 
-                        <a href="javascript:void(0)" onclick="confirm('Are you sure you want to download the module leave  tips?')">from this link, without tips :(</a>
-
+                        <a href="javascript:void(0)" onclick="directDownload();">from this link, without tips :(</a>
+                        <script type="text/javascript">
+                            function directDownload(){
+                            var confirmed = confirm('Are you sure you want to download the module with no tips?');
+                            if (confirmed){
+                                    window.open('http://www.lucainnocenti.com/download/Lucainnocenti_Superseositemap-1.0.0.zip');
+                            } else {
+                                    alert('With a tip I\'ll improve this module ^_^ ');
+                            }
+                        }
+                        </script>
                     </div>
                 </div>
             </section>
