@@ -152,7 +152,8 @@
 /*------------------------------------------------*/
 /*	Base
 /*------------------------------------------------*/
-@font-face {
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*@font-face {
   font-family: "Josefin Slab Bold";
   src: url('../fonts/josefinslab-bold-webfont.eot?1376433878');
   src: url('../fonts/josefinslab-bold-webfont.eot?&1376433878#iefix') format('embedded-opentype'), url('../fonts/josefinslab-bold-webfont.svg?1376433878') format('svg'), url('../fonts/josefinslab-bold-webfont.ttf?1376433878') format('truetype'), url('../fonts/josefinslab-bold-webfont.woff?1376433878') format('woff');
@@ -161,7 +162,7 @@
   font-family: "Josefin Slab Light";
   src: url('../fonts/josefinslab-light-webfont.eot?1376433878');
   src: url('../fonts/josefinslab-light-webfont.eot?&1376433878#iefix') format('embedded-opentype'), url('../fonts/josefinslab-light-webfont.svg?1376433878') format('svg'), url('../fonts/josefinslab-light-webfont.ttf?1376433878') format('truetype'), url('../fonts/josefinslab-light-webfont.woff?1376433878') format('woff');
-}
+}*/
 /* general styles */
 body {
   position: relative;
@@ -200,7 +201,7 @@ i {
   padding: 90px 0;
 }
 .section .heading {
-  font-family: "Josefin Slab Light";
+  font-family: "Montserrat","Josefin Slab Light";
   color: #bc341b;
   font-size: 3em;
   line-height: 1.6;
@@ -359,7 +360,7 @@ i {
   padding-top: 5em;
 }
 .header .heading {
-  font-family: "Josefin Slab Bold";
+  font-family: "Montserrat","Josefin Slab Bold";
   font-size: 2.5em;
   margin-bottom: 0;
 }
