@@ -918,3 +918,5 @@ div[class*="col-"] > .form-group {
 .footer p {
   margin-bottom: 0;
 }
+
+.btn-addtocart{padding: 12px 18px; font-size: 32px; background-color: #cf5037;}

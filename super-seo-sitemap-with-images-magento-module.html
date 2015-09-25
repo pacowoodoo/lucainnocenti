@@ -92,20 +92,26 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="2QFQ5SM8XN9ZA">
-                            <button type="submit" class="btn btn-lg btn-info" name = "submit" 
-                                    title="Offer a beer for super seo sitemap.">5&euro; to buy this module</button>
+                            <button type="submit" class="btn btn-lg btn-info btn-addtocart pull-right" name = "submit" 
+                                    onclick="ga('send', 'event', 'button', 'click', 'sitemap paypal', 3);"
+                                    title="Offer a beer for super seo sitemap.">Buy for 5&euro; </button>
                             <input type="image" style="display:none;border:0px;" src="http://www.lucainnocenti.com/assets/img/offermeabeer.png" name="submit" alt="PayPal – The safer, easier way to pay online." >
                             <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
                         </form>
 
+                            <div style="clear:both;">    
+                        And I'll be pleased <span class="glyphicon glyphicon-heart-empty"></span> to continue working on it.
+                            </div><br/><br/>
                             
-                        And I'll be pleased <span class="glyphicon glyphicon-heart-empty"></span> to continue working on it.<br/><br/>
                         </div>
                         <div class="" style="clear:both">
+                            <img class="pull-left" src="./assets/img/money-back-30-days.png" />
+                            <div style="clear:both;">
                             Otherwise... you can download the module 
-                            <a href="javascript:void(0)" onclick="directDownload();">from this link, without tips :(</a>
+                            <a href="javascript:void(0)" style="color:#777;" onclick="directDownload();">from this link, without tips :(</a>
                             <script type="text/javascript">
                                 function directDownload(){
+                                ga('send', 'event', 'button', 'click', 'sitemap directDownload', 0);
                                 var confirmed = confirm('Are you sure you want to download the module without tips?');
                                 if (confirmed){
                                         window.open('http://www.lucainnocenti.com/download/Lucainnocenti_Superseositemap-1.0.0.zip');
@@ -114,6 +120,7 @@
                                 }
                             }
                             </script>
+                            </div>
                         </div>
                     </div>
                 </div>
