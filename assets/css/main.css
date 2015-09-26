@@ -202,10 +202,10 @@ i {
   padding: 90px 0;
 }
 .section .heading {
-  font-family: "Montserrat","Josefin Slab Light";
+  font-family: "Montserrat",helvetica;
   color: #bc341b;
   font-size: 3em;
-  line-height: 1.6;
+  line-height: 1.3;
   margin-top: 0;
   margin-bottom: 30px;
   text-align: center;
@@ -361,7 +361,7 @@ i {
   padding-top: 5em;
 }
 .header .heading {
-  font-family: "Montserrat","Josefin Slab Bold";
+  font-family: "Montserrat", helvetica;
   font-size: 2.5em;
   margin-bottom: 0;
 }
